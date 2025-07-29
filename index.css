@@ -1,8 +1,161 @@
-h1{
-    color: red;
-    background-image: url(Photos/javaprobs.png);
- 
+@media (max-width: 768px) {
+    html {
+        font-size: 56.25%; /* 9px */
+    }
 }
-#wi{
-    color: aquamarine;
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%; /* 8px */
+    }
 }
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000; 
+}
+
+
+#container {
+    min-height: 100vh;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Photos/dry-tree-moonlit-night.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#forum {
+    background-color: rgba(0, 0, 25, 0.4); 
+    height: 60vh;
+    width: 60vw;
+    border-radius: 20px;
+    border: 2px solid #0a0f5c; 
+    box-shadow: 0 0 15px #0a0f5c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#Username,
+#Password {
+    background-color: #0a0f2c;   
+    color: #cdd9f1;              
+    font-weight: bold;
+    border: 2px solid #0e1c75;  
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 0 10px #0e1c75; 
+    transition: 0.3s ease;
+}
+
+#button {
+    background-color: #0a0f2c;
+    color: #cdd9f1;
+    font-weight: bold;
+    border: 2px solid #0e1c75;
+    padding: 10px;
+    border-radius: 20px;
+    width: 50%;
+    box-shadow: 0 0 10px #0e1c75;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#Username::placeholder,
+#Password::placeholder {
+    color: #8aaaff;
+    text-shadow: 0 0 5px #0e1c75;
+    font-weight: bold;
+}
+
+#Username:focus,
+#Password:focus,
+#button:focus {
+    outline: none;
+    border-color: #4d63ff;
+    box-shadow: 0 0 15px #4d63ff, 0 0 25px #4d63ff;
+}
+
+#forum h1 {
+    color: #cdd9f1;
+    text-shadow: 0 0 8px #4d63ff;
+    margin-bottom: 20px;
+}
+
+#Username:hover,
+#Password:hover,
+#button:hover{
+    border-color: #4d63ff;
+    box-shadow: 0 0 15px #12194d, 0 0 25px #161d57;
+    transition: 0.3s ease-in-out;
+}
+#Paragraph{
+    color: #4d63ff;
+}
+
+#Paragraph a{
+    color: white;
+    text-decoration: none;
+    opacity: 0.75;
+}
+#Paragraph a:hover{
+    color: rgb(77, 87, 121);
+    text-decoration: none;
+    box-shadow: 0 0 15px #12194d, 0 0 25px #161d57;
+    transition: 0.3s ease-in-out;
+    opacity: 0.75;
+}
+
+#nav {
+    height: 30px;
+    padding: 0;
+}
+#nav {
+    width: 100%;
+    background-color: #0a0f2c;
+    background-position: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 50%;            
+    transform: translateX(-50%);
+    z-index: 1000;
+    opacity: 0.8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4d63ff;
+    text-shadow: 0 0 8px #4d63ff;
+}
+
+
